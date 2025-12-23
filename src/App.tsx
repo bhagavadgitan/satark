@@ -13,6 +13,11 @@ import SurveyDesigner from './components/SurveyDesigner';
 import AgentManagement from './components/AgentManagement';
 import AgentDashboard from './components/AgentDashboard';
 import SatarkCopilot from './components/SatarkCopilot';
+import QuestionBank from './components/QuestionBank';
+import MultiChannelDelivery from './components/MultiChannelDelivery';
+import VoiceInterface from './components/VoiceInterface';
+import ParadataMonitoring from './components/ParadataMonitoring';
+import ComplianceGovernance from './components/ComplianceGovernance';
 import { Bot } from 'lucide-react';
 
 const AdminDashboard: React.FC = () => {
@@ -25,41 +30,24 @@ const AdminDashboard: React.FC = () => {
         return <Dashboard />;
       case 'survey-designer':
         return <SurveyDesigner />;
+      case 'question-bank':
+        return <QuestionBank />;
       case 'agent-management':
         return <AgentManagement />;
-      case 'response-tracker':
-        return (
-          <div className="p-6 flex items-center justify-center h-96">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Response Tracker</h2>
-              <p className="text-gray-600 dark:text-gray-400">Coming soon - Track citizen responses across all channels</p>
-            </div>
-          </div>
-        );
+      case 'multi-channel-delivery':
+        return <MultiChannelDelivery />;
+      case 'voice-interface':
+        return <VoiceInterface />;
+      case 'paradata-monitoring':
+        return <ParadataMonitoring />;
+      case 'compliance-governance':
+        return <ComplianceGovernance />;
       case 'analytics':
         return (
           <div className="p-6 flex items-center justify-center h-96">
             <div className="text-center">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Real-Time Analytics</h2>
-              <p className="text-gray-600 dark:text-gray-400">Coming soon - Advanced analytics and insights</p>
-            </div>
-          </div>
-        );
-      case 'data-quality':
-        return (
-          <div className="p-6 flex items-center justify-center h-96">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Data Quality & Validation</h2>
-              <p className="text-gray-600 dark:text-gray-400">Coming soon - AI-powered data validation</p>
-            </div>
-          </div>
-        );
-      case 'reporting':
-        return (
-          <div className="p-6 flex items-center justify-center h-96">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Reporting & Exports</h2>
-              <p className="text-gray-600 dark:text-gray-400">Coming soon - Comprehensive reporting suite</p>
+              <p className="text-gray-600 dark:text-gray-400">Advanced AI-powered analytics coming soon</p>
             </div>
           </div>
         );
@@ -67,8 +55,8 @@ const AdminDashboard: React.FC = () => {
         return (
           <div className="p-6 flex items-center justify-center h-96">
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Settings & Compliance</h2>
-              <p className="text-gray-600 dark:text-gray-400">Coming soon - System configuration and compliance</p>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">System Settings</h2>
+              <p className="text-gray-600 dark:text-gray-400">Configuration and system management</p>
             </div>
           </div>
         );

@@ -28,59 +28,64 @@ const Sidebar: React.FC<SidebarProps> = ({ activeModule, onModuleChange }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const modules = [
-    { 
-      id: 'dashboard', 
-      name: 'Dashboard', 
-      icon: LayoutDashboard, 
+    {
+      id: 'dashboard',
+      name: 'Dashboard',
+      icon: LayoutDashboard,
       color: 'text-accent'
     },
-    { 
-      id: 'survey-management', 
-      name: 'Survey Management', 
-      icon: FileText, 
-      color: 'text-success',
-      subItems: [
-        { id: 'survey-designer', name: 'Create Survey', icon: Plus },
-        { id: 'view-surveys', name: 'View Surveys', icon: Eye }
-      ]
-    },
-    { 
-      id: 'agent-management', 
-      name: 'Agent Management', 
-      icon: Users, 
-      color: 'text-accent',
-      subItems: [
-        { id: 'assign-track', name: 'Assign & Track', icon: UserCheck }
-      ]
-    },
-    { 
-      id: 'validation-engine', 
-      name: 'Validation Engine', 
-      icon: ShieldCheck, 
-      color: 'text-warning'
-    },
-    { 
-      id: 'analytics', 
-      name: 'Reports & Analytics', 
-      icon: BarChart3, 
+    {
+      id: 'survey-designer',
+      name: 'AI Survey Designer',
+      icon: FileText,
       color: 'text-success'
     },
-    { 
-      id: 'citizen-channels', 
-      name: 'Citizen Channels', 
-      icon: Smartphone, 
+    {
+      id: 'question-bank',
+      name: 'Question Bank',
+      icon: FileDown,
       color: 'text-accent'
     },
-    { 
-      id: 'compliance-privacy', 
-      name: 'Compliance & Privacy', 
-      icon: Lock, 
+    {
+      id: 'agent-management',
+      name: 'Agent Management',
+      icon: Users,
+      color: 'text-accent'
+    },
+    {
+      id: 'multi-channel-delivery',
+      name: 'Multi-Channel Delivery',
+      icon: MessageSquare,
+      color: 'text-success'
+    },
+    {
+      id: 'voice-interface',
+      name: 'Voice & Multilingual',
+      icon: Globe,
+      color: 'text-accent'
+    },
+    {
+      id: 'paradata-monitoring',
+      name: 'Quality Monitoring',
+      icon: ShieldCheck,
+      color: 'text-warning'
+    },
+    {
+      id: 'analytics',
+      name: 'Analytics & Insights',
+      icon: BarChart3,
+      color: 'text-success'
+    },
+    {
+      id: 'compliance-governance',
+      name: 'Compliance & Governance',
+      icon: Lock,
       color: 'text-error'
     },
-    { 
-      id: 'settings', 
-      name: 'Settings', 
-      icon: Settings, 
+    {
+      id: 'settings',
+      name: 'Settings',
+      icon: Settings,
       color: 'text-corporate-600'
     },
   ];
